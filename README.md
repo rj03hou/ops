@@ -1,3 +1,10 @@
+##rest.py
+使用web.py编写的提供REST风格的API，主要提供下面api，分别用于获取数据库列表、表列表、初始化一台服务器的zabbix监控。其中initial_zb调用zabbix.py
+
+    '/db/(.+)/(\d+)', 'get_db',
+    '/table/(.+)/(\d+)/(.+)', 'get_table',
+    '/initialzb/(.+)/(.+)', 'initial_zb'
+
 ##zabbix.py
 * config
 
